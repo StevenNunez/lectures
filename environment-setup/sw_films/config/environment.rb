@@ -6,3 +6,4 @@ Bundler.require
 require 'json'
 
 require_relative '../lib/models/movie'
+require_relative '../lib/wrappers/swapi_wrapper'

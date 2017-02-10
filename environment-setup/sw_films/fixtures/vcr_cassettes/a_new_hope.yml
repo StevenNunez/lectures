@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://swapi.co/api/films/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin16.1.0 x86_64) ruby/2.4.0p0
+      Host:
+      - swapi.co
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Date:
+      - Fri, 10 Feb 2017 16:54:35 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d90a1f3b2880faafec9d449dd13ad52691486745675; expires=Sat, 10-Feb-18
+        16:54:35 GMT; path=/; domain=.swapi.co; HttpOnly
+      Etag:
+      - '"d41d8cd98f00b204e9800998ecf8427e"'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - http://swapi.co/api/films/1/
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 32f1157542ee0eeb-EWR
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 10 Feb 2017 16:54:35 GMT
+- request:
+    method: get
+    uri: http://swapi.co/api/films/1/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin16.1.0 x86_64) ruby/2.4.0p0
+      Cookie:
+      - __cfduid=d90a1f3b2880faafec9d449dd13ad52691486745675
+      Host:
+      - swapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Feb 2017 16:54:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Allow:
+      - GET, HEAD, OPTIONS
+      Vary:
+      - Accept, Cookie
+      Etag:
+      - W/"3dc41b46a6c87308c9d1903f976972ff"
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 32f11577a2190697-EWR
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA4yWTY/bNhCG/8qAl15kW/TH2tZt0QRJ0bQItntqEyzG5Kw0iEwSQ2pdt+h/Lyh5twFSL3PQ6XnIGb5DAvpbJU49qUbdwq90gvc+kKoUBY7e0gNb1awr5QM5du2DETz1qlE/JeAICIGEvQX/CIafuIcTyvyTfHJ3dKAeYkBDseMQK4hJ+Au7NtNH8UdA6NhacnDASBV0+ERw8i7z1BELPLLEBE9skpczYIvsYrpgoFztHfZoEht4ewwsNFbO35tB2LWQvQOm1FMFY0OZxcAU4YgOW7KQPMRE2EMkIzTuHnp0MYO8fNr4h5jB0Cc+YiI4EQbvqlF48/b2/n2mv93f3lWADlCOXshOhx8rJkzsHZw4dUDOD20HwZ9IxrN4sBST+HNeSy6xEOQWKL0c5+MgcSALh/M3PUV2HBMJYEsuxQo+CjtDcYQfiBEkjwA6fyTAg0ex0E2VY0LJs6nADDF5y+jyHFN3adr35OASRocJDDqIeUiX9YF86AnQWRCKyQtNoyWy/vicX4s9/nmez+dzVSnLQnmYqlHvyEtL8GEwGFWlgng7GBoJyhl+HiT9VcEdmy/wi/kR+344qkoJ9YSRHiymfGH1frud1ZvZcqMqZToUNIkkquYP1aUUmsUinjDw3PgFBl5MDS/0QlWv8WWBrwp8XeCbAr8p8G2B7wp8X+C6LgmlhHQpIl3KSJdC0qWUdCkGXcphpxfqc6Wmt3j9Uk34lVtzEVYlYSr3/CqvFnwRrpf8T1mVlU1Z2ZeV65fmK0d/h/Mdh8rX63Olnqhj09PVoJ759Qf5YtwUjW3R2E3jC2T4ek8X/EroF2FVEpYlQZeE9diwEcJEVjVqWev1TC9nur7X62a5alZ6vtvVdV3/nv8HLL9om1m9nml9X++b9U2zWc632/Vuv83aIPnv4P/KPnJ/HLv6518AAAD//wMA3sr8y3IIAAA=
+    http_version: 
+  recorded_at: Fri, 10 Feb 2017 16:54:35 GMT
+recorded_with: VCR 3.0.3
