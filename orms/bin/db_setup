@@ -2,6 +2,12 @@
 require_relative '../config/environment'
 
 DB[:conn].execute("CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, wutang_name TEXT)")
+DB[:conn].execute("CREATE TABLE courses (id INTEGER PRIMARY KEY, name TEXT)")
+
+DB[:conn].execute_batch(<<-SQL)
+  INSERT INTO courses (name) VALUES ("Intro to Ruby");
+SQL
+
 DB[:conn].execute_batch(<<-SQL)
   INSERT INTO students (name, wutang_name) VALUES ("Steven Nunez", "Fearless Watcher");
   INSERT INTO students (name, wutang_name) VALUES ("Alexandra Roth", "Master Desperado");

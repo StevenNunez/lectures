@@ -4,26 +4,6 @@
 # • Update the database and insert into it the data in the Active Record
 # • Get and set the fields
 # • Implement some pieces of business logic
-class Student
+class Student < ArachnidRecord
   attr_reader :id, :name, :wutang_name
-  def initialize(args)
-    args.each do |attribute, value|
-      instance_variable_set("@#{attribute}".to_sym, value)
-    end
-  end
-
-  def self.all
-    results = DB[:conn].execute(<<-SQL)
-    SELECT *
-    FROM students
-    SQL
-    results.map do |row_set|
-      self.new_from_row_set(row_set)
-    end
-  end
-
-  def self.new_from_row_set(row_set)
-    row_set = row_set.reject {|k, _| k.is_a? Integer }
-    self.new(row_set)
-  end
 end
