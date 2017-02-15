@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby
+require_relative '../config/environment'
+
+DB[:conn].execute("CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, wutang_name TEXT)")
+DB[:conn].execute_batch(<<-SQL)
+  INSERT INTO students (name, wutang_name) VALUES ("Steven Nunez", "Fearless Watcher");
+  INSERT INTO students (name, wutang_name) VALUES ("Alexandra Roth", "Master Desperado");
+  INSERT INTO students (name, wutang_name) VALUES ("Andrew Wick", "E-ratic Madman");
+  INSERT INTO students (name, wutang_name) VALUES ("Arthur Roncey", "X-pert Madman");
+  INSERT INTO students (name, wutang_name) VALUES ("Ben Jay", "Lefty McFail");
+  INSERT INTO students (name, wutang_name) VALUES ("Corinne Kelly", "Phantom Commander");
+  INSERT INTO students (name, wutang_name) VALUES ("Craig Schiff", "Misunderstood Warrior");
+  INSERT INTO students (name, wutang_name) VALUES ("Daniel Seehausen", "Rickin Mortee");
+  INSERT INTO students (name, wutang_name) VALUES ("Devin Rieger", "Lucky Magician");
+  INSERT INTO students (name, wutang_name) VALUES ("Dison Ruan",  "Sarkastik Mastermind");
+  INSERT INTO students (name, wutang_name) VALUES ("Gee Li", "Respected Dreamer");
+  INSERT INTO students (name, wutang_name) VALUES ("Holt Walborn", "Profound Dreamer");
+  INSERT INTO students (name, wutang_name) VALUES ("James Phan", "Master Bastard");
+  INSERT INTO students (name, wutang_name) VALUES ("Jason Brown", "Fearless Commander");
+  INSERT INTO students (name, wutang_name) VALUES ("Martin Crane", "X-pert Criminal");
+  INSERT INTO students (name, wutang_name) VALUES ("Maxim Eingorn", "Smilin' Overlord");
+  INSERT INTO students (name, wutang_name) VALUES ("Niky Morgan", "Fearless Mastermind");
+  INSERT INTO students (name, wutang_name) VALUES ("Noah Schechter", "Irate Leader");
+  INSERT INTO students (name, wutang_name) VALUES ("Rathi nair-das","Amateur Dreamer");
+  INSERT INTO students (name, wutang_name) VALUES ("Siobhan Harley", "Drunken Madman");
+  INSERT INTO students (name, wutang_name) VALUES ("Vicky Rathsmill", "Vizual Artist");
+  INSERT INTO students (name, wutang_name) VALUES ("Zane Abraham", "Unlucky Killah");
+  INSERT INTO students (name, wutang_name) VALUES ("Jeff Hechler", "Arrogant Prophet");
+  INSERT INTO students (name, wutang_name) VALUES ("Rahul Mody", "Ruff Overload");
+  INSERT INTO students (name, wutang_name) VALUES ("Charles Samuels", "Midnight Prophet");
+  INSERT INTO students (name, wutang_name) VALUES ("Dylan Brevis", "Midnight Dominator");
+  INSERT INTO students (name, wutang_name) VALUES ("Frederico De Paoli", "Dynamic Beggar");
+  INSERT INTO students (name, wutang_name) VALUES ("Ian Boynton", "Master Dreamer");
+  INSERT INTO students (name, wutang_name) VALUES ("Jessica Rudder", "Profound Lover");
+  INSERT INTO students (name, wutang_name) VALUES ("John Shelby", "Foolish Bandit");
+  INSERT INTO students (name, wutang_name) VALUES ("Melissa Wei","Mighty Destroyer");
+  INSERT INTO students (name, wutang_name) VALUES ("Nicholas Anaya", "Smilin’ Prohpet");
+  INSERT INTO students (name, wutang_name) VALUES ("Ryan Burke", "Profound Desperado");
+SQL
