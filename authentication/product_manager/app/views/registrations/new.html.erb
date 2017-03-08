@@ -1,0 +1,6 @@
+<h1>Sign up!</h1>
+<%= form_tag registrations_path do %>
+  <%= text_field_tag :username, nil, placeholder: "Username" %>
+  <%= password_field_tag :password, nil, placeholder: "Password" %>
+  <%= submit_tag %>
+<% end %>

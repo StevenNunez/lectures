@@ -1,0 +1,4 @@
+<h1>Home page!!</h1>
+<% if session[:account_id] %>
+  <%= Account.find(session[:account_id]).username %>
+<% end %>
